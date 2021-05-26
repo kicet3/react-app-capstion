@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.bold{
+    font-weight:bold;
+}
+
+.Lato_font_30{
+    font-family: 'Lato', sans-serif;
+    font-size:30px;
+}
+
+.Lato_font_15{
+    font-family: 'Lato', sans-serif;
+    font-size:15px;
+    letter-spacing:1.5px;
+}
+
+.no_underline{
+    text-decoration:none;
+    color:black;
+}
+html, body{
+    margin:0;
+    height:100%;
+}
+#container{
+    width:100%;
+    height:100%;
+}
+
+#container .login_container{
+    width:100%;
+    height:100%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#container .login_container .wrap_login{
+    display:flex;
+    justify-content:center;
+    width:390px;
+    height:700px;
+    border-radius:20px;
+    background:whitesmoke;
+}
+
+#container .login_container .wrap_login .login_form{
+    display:flex;
+    flex-direction:column;
+    margin:auto auto;
+    align-items:center;
+    width:280px;
+    height:650px;
+}
+
+#container .login_container .wrap_login .login_form .welcome{
+    display:flex;
+    justify-content:center;
+    width:280px;
+    height:40px;
+}
+
+#container .login_container .wrap_login .login_form .logo{
+    display:flex;
+    justify-content:center;
+    width:280px;
+    height:40px;
+    margin-top:20px;
+    margin-bottom:40px;
+    font-family: 'Lobster', cursive;
+    font-size:25px;
+    font-weight:bold;
+}
+
+#container .login_container .wrap_login .login_form .Wrap{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:280px;
+    height:47px;
+    margin-top:20px;
+    opacity:0.5;
+}
+
+#container .login_container .wrap_login .login_form .Wrap .id{
+    position:absolute;
+    width:280px;
+    height:47px;
+    border:0px;
+    border-bottom:2px solid #999;
+    background:transparent;
+}
+
+#container .login_container .wrap_login .login_form .Wrap .input_wrap{
+    width:280px;
+    height:30px;
+    position:absolute;
+    z-index:-1;
+    background:transparent;
+    border:1px solid transparent;
+    transform:translateY(20%);
+}
+
+#container .login_container .wrap_login .login_form .Wrap .id:focus{
+    border:0;
+    border-bottom:2px solid violet;
+    outline:0;   
+}
+#container .login_container .wrap_login .login_form .Wrap .id:focus ~.input_wrap{
+    transition-duration:0.3s;
+    transform:translateY(-20px);
+    position:absolute;
+}
+#container .login_container .wrap_login .login_form .Wrap .id:invalid ~.input_wrap{
+    transition-duration:0.3s;
+    transform:translateY(-20px);
+    position:absolute;
+}
+
+#container .login_container .wrap_login .login_form .Loginbutton{
+    display:flex;
+    width:280px;
+    height:50px;
+    margin-top:50px;
+    justify-content:center;
+}
+#container .login_container .wrap_login .login_form .Loginbutton input{
+    width:280px;
+    height:50px;
+    border-radius:25px;
+    border:1px solid whitesmoke;
+    background: linear-gradient(to right,skyblue,violet);
+}
+#container .login_container .wrap_login .login_form .sign{
+    width:280px;
+    height:50px;
+    margin-top:30px;
+    text-align:center;
+}
+
+
+
+@media screen and (max-width:400px){
+    #container .login_container .wrap_login{
+        width:97.5%;
+        height:650px;
+    }
+    #container .login_container .wrap_login .login_form{
+        width:70%;
+        height:540px;
+    }
+
+    #container .login_container .wrap_login .login_form .welcome{
+        width:70%;
+        height:40px;
+    }
+
+    #container .login_container .wrap_login .login_form .logo{
+        width:70%;
+        height:40px;
+    }
+
+    #container .login_container .wrap_login .login_form .Wrap{
+        width:70%;
+        height:47px;
+    }
+
+    #container .login_container .wrap_login .login_form .Wrap .id{
+        width:70%;
+        height:47px;
+    }
+
+    #container .login_container .wrap_login .login_form .Wrap .input_wrap{
+        width:70%;
+        height:45px;
+    }
+    #container .login_container .wrap_login .login_form .Loginbutton{
+        width:100%;
+    }
+    #container .login_container .wrap_login .login_form .Loginbutton input{
+        width:70%;
+        height:50px;
+    }
+    #container .login_container .wrap_login .login_form .sign{
+        width:70%;
+        height:50px;
+    }
+}

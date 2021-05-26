@@ -1,0 +1,153 @@
+.container{
+    width:100%;
+    height:1000px;
+    display:flex;
+}
+
+.container .left_board{
+    width:50%;
+    height:1000px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    background:blue;
+}
+.container .left_board .text_wrapper{
+    width:90%;
+    height:1%;
+}
+
+.container .left_board .state_board{
+    width:90%;
+    height:20%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:red;
+}
+.container .left_board .state_board .state_header{
+    width:100%;
+    height:20%;
+    display:flex;
+    justify-content:center;
+}
+
+.container .left_board .state_board .state_header_item{
+    width:33%;
+    height:100%;
+    background:green;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid black;
+}
+
+.container .left_board .state_board .state_content{
+    width:100%;
+    height:80%;
+    display:flex;
+    justify-content:center;
+}
+.container .left_board .state_board .state_content_item{
+    width:33%;
+    height:100%;
+    background:green;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid black;
+}
+
+.container .left_board .graph_board{
+    width:90%;
+    height:70%;
+    background:yellow;
+}
+
+.container .right_board{
+    width:50%;
+    height:1000px;
+    background:yellow;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.container .right_board .online_state{
+    width:90%;
+    height:43%;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.container .right_board .online_state .online_state_content{
+    width:100%;
+    height:90%;
+    background:white;
+    overflow-y:scroll;
+}
+
+.container .right_board .offline_state{
+    width:90%;
+    height:43%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.container .right_board .offline_state .offline_state_content{
+    width:100%;
+    height:90%;
+    background:white;
+    overflow-y:scroll;
+}
+
+.table_wrapper{
+    width:100%-1px;
+    height:10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid black;
+}
+
+.table_wrapper .IDX_wrapper{
+    width:7%;
+    height:100%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.table_wrapper .IP_wrapper{
+    width:15%;
+    height:100%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.table_wrapper .Location_wrapper{
+    width:50%;
+    height:100%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.table_wrapper .Type_wrapper{
+    width:28%;
+    height:100%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
